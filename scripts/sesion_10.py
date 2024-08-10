@@ -71,7 +71,7 @@ starwars[condicion1 | condicion2]
 
 starwars[starwars["homeworld"].isin(["Tatooine","Naboo"])]
 
-### TAREA: Filtra los personajes que son del planeta Tatooine 
+### Filtra los personajes que son del planeta Tatooine 
 ### o Naboo y cuyo peso sea mayor que el peso promedio de su 
 ### propio planeta
 

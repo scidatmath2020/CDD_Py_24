@@ -45,8 +45,9 @@ ggplot(data=mpg, mapping=aes(x="class",y="hwy",alpha="cty")) +
 )
 
 
-(
-ggplot(data=mpg, mapping=aes(x="cty",y="hwy",color="class")) +
+( 
+mpg >> filter((_["class"] == "compact") | (_["class"] == "subcompact")) >> 
+ggplot(mapping=aes(x="cty",y="hwy",color="class")) +
     geom_point() +
     geom_abline(slope=1,intercept=0)
 )
